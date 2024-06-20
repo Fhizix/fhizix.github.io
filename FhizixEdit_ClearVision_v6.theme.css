@@ -119,10 +119,10 @@
 }
 
  /* banner fade removal */
- .theme-dark .container_ee69e0 .bannerImage_fd6364, /*server banner*/
- .profileBanner_f0f36c, /*user modal*/
- .popoutBannerPremium_c3e427, /*nitro popout*/
- .popoutBanner_c3e427 { /*user popout*/
-     -webkit-mask: none;
-     mask: none;
- }
+.theme-dark .container__590e2 .bannerImage__39c51, /*server banner*/
+.profileBanner__8414b, /*user modal*/
+.popoutBannerPremium__942db, /*nitro popout*/
+.popoutBanner__9f5b9 { /*user popout*/
+    -webkit-mask: none;
+    mask: none;
+}
