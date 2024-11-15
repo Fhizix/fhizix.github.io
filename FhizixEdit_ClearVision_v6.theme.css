@@ -17,11 +17,11 @@
 /* SETTINGS */
 :root {
   /* ACCENT COLORS */
-  --main-color: #ff8f8f; /* main accent color (hex, rgb or hsl) [default: #2780e6] #ff9494 */
-  --hover-color: #cc7272; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] #e68585 */
+  --main-color: #6f302a; /* main accent color (hex, rgb or hsl) [default: #2780e6] #ff9494 */
+  --hover-color: #662019; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] #e68585 */
   --success-color: #43b581; /* success accent color (hex, rgb or hsl) [default: #43b581] */
   --danger-color: #cc3737; /* danger accent color (hex, rgb or hsl) [default: #982929] */
-  --url-color: var(--main-color); /*The color of url links [default: var(--main-color)]*/
+  --url-color: #F9C0BB; /*The color of url links [default: var(--main-color)]*/
 
   /* STATUS COLORS */
   --online-color: #57F287; /* online status color (hex, rgb or hsl) [default: #43b581] */
