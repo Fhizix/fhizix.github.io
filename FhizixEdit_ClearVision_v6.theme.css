@@ -21,7 +21,7 @@
   --hover-color: #83343A; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] PREFERRED #e68585 STANDARD #662019 */
   --success-color: #43b581; /* success accent color (hex, rgb or hsl) [default: #43b581] */
   --danger-color: #cc3737; /* danger accent color (hex, rgb or hsl) [default: #982929] */
-  --url-color: #C8926B; /*The color of url links [default: var(--main-color)] #F9C0BB*/
+  --url-color: #F4EBA0; /*The color of url links [default: var(--main-color)] #F9C0BB*/
 
   /* STATUS COLORS */
   --online-color: #57F287; /* online status color (hex, rgb or hsl) [default: #43b581] */
@@ -40,10 +40,10 @@
 
   /* APP BACKGROUND */
   --background-shading: 40%; /* app background shading (0 for complete smoothness) [default: 100%] */
-  --background-overlay: rgba(46, 46, 46, 0.7); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
+  --background-overlay: rgba(46, 46, 46, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
   
   --background-image: url(https://konachan.net/jpeg/46292d3ab0a1caef810b74db1ed7c2df/Konachan.com%20-%20336648%20animal_ears%20blonde_hair%20blue_eyes%20blue_hair%20brown_eyes%20brown_hair%20building%20christmas%20dress%20gloves%20group%20horns%20long_hair%20ponytail%20snow%20snowman%20winter.jpg); /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/sapphire.jpg)] STANDARD url(https://upload-os-bbs.hoyolab.com/upload/2021/03/19/96426178/45032e1b7bfa9b731839d24336f2524c_1970257498793124840.png) */
-  --background-position: top; /* app background position [default: center] */
+  --background-position: center; /* app background position [default: center] */
   --background-size: cover; /* app background size [default: cover] */
   --background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
   --background-attachment: fixed; /* app background attachment [default: fixed] */
