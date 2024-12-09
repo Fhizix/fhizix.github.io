@@ -119,11 +119,28 @@
   --font-primary: var(--main-font);
 }
 
- /* banner fade removal */
+/* remove banner fade */
 .theme-dark .container__590e2 .bannerImage__39c51, /*server banner*/
 .profileBanner__8414b, /*user modal*/
 .popoutBannerPremium__942db, /*nitro popout*/
 .popoutBanner__9f5b9 { /*user popout*/
     -webkit-mask: none;
     mask: none;
+}
+.root_f9a4c9 .userProfileOuterUnthemed_c69a7b .banner_d5fdb1 {
+  -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
+  mask: linear-gradient(to bottom, transparent 50%, transparent);
+}
+
+/* show full bio */
+ .descriptionClamp_abaf7d {
+    -webkit-line-clamp: unset;
+}
+.maxBioHeight_abaf7d {
+    max-height: unset;
+}
+
+/* remove server discovery */
+.footer_f8ec41 {
+  display: none;
 }
