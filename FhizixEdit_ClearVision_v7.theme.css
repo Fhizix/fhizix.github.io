@@ -1,0 +1,117 @@
+/**
+ * @name ClearVision V7 Ruby for Vencord
+ * @author ClearVision Team
+ * @version 7.0.0
+ * @description Highly customizable theme for BetterDiscord.
+ * @source https://github.com/ClearVision/ClearVision-v7
+ * @website https://clearvision.github.io
+ * @invite dHaSxn3
+ */
+/* IMPORT CSS */
+@import url("https://clearvision.github.io/ClearVision-v7/main.css");
+@import url("https://clearvision.github.io/ClearVision-v7/vencord.css");
+/* SETTINGS */
+:root {
+  /* ACCENT COLORS */
+  --main-color: #E33C61; /* main accent color (hex, rgb or hsl) [default: #2780e6] PREFERRED #ff8080 STANDARD #6f302a XMAS24 #CD504E */
+  --hover-color: #e96380; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] PREFERRED #e68585 STANDARD #662019 XMAS24 #83343A */
+  --success-color: #43b581; /* success accent color (hex, rgb or hsl) [default: #43b581] */
+  --danger-color: #cc3737; /* danger accent color (hex, rgb or hsl) [default: #982929] */
+  /* STATUS COLORS */
+  --online-color: #43b581;
+  --idle-color: #faa61a;
+  --dnd-color: #982929;
+  --streaming-color: #593695;
+  --offline-color: #808080;
+  /* APP BACKGROUND */
+  --background-shading-percent: 80%;
+  --background-image: url(https://public-files.gumroad.com/8tb5nh2lwqniyoevksppb5r9af8t); /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/sapphire.jpg)] STANDARD url(https://upload-os-bbs.hoyolab.com/upload/2021/03/19/96426178/45032e1b7bfa9b731839d24336f2524c_1970257498793124840.png) XMAS24 url(https://konachan.net/jpeg/46292d3ab0a1caef810b74db1ed7c2df/Konachan.com%20-%20336648%20animal_ears%20blonde_hair%20blue_eyes%20blue_hair%20brown_eyes%20brown_hair%20building%20christmas%20dress%20gloves%20group%20horns%20long_hair%20ponytail%20snow%20snowman%20winter.jpg) */
+  --background-attachment: fixed;
+  --background-filter: saturate(calc(var(--saturation-factor, 1) * 1));
+  /* USER POPOUT BACKGROUND */
+  --user-popout-image: var(--background-image);
+  --user-popout-attachment: var(--background-attachment);
+  --user-popout-filter: var(--background-filter);
+  /* USER MODAL BACKGROUND */
+  --user-modal-image: var(--background-image);
+  --user-modal-attachment: var(--background-attachment);
+  --user-modal-filter: var(--background-filter);
+  /* HOME ICON */
+  --home-icon: url(https://clearvision.github.io/icons/discord.svg);
+  /* FONTS */
+  --main-font: "gg sans", Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --code-font: Consolas, "gg mono", "Liberation Mono", Menlo, Courier, monospace;
+}
+
+/* THEME SPECIFIC SHADING */
+/* LIGHT THEME */
+:is(.theme-light, .theme-dark .theme-light) {
+  --background-shading: rgba(252, 252, 252, 0.3);
+  --card-shading: rgba(252, 252, 252, 0.3);
+  --popout-shading: rgba(252, 252, 252, 0.7);
+  --modal-shading: rgba(252, 252, 252, 0.5);
+  --input-shading: rgba(0, 0, 0, 0.3);
+  --normal-text: #36363c;
+  --muted-text: #75757e;
+}
+
+/* ASH THEME */
+:is(.theme-dark, .theme-light .theme-dark) {
+  --background-shading: rgba(0, 0, 0, 0.4);
+  --card-shading: rgba(0, 0, 0, 0.2);
+  --popout-shading: rgba(0, 0, 0, 0.6);
+  --modal-shading: rgba(0, 0, 0, 0.4);
+  --input-shading: rgba(255, 255, 255, 0.05);
+  --normal-text: #d8d8db;
+  --muted-text: #aeaeb4;
+}
+
+/* DARK THEME */
+:is(.theme-darker, .theme-light .theme-darker) {
+  --background-shading: rgba(0, 0, 0, 0.6);
+  --card-shading: rgba(0, 0, 0, 0.3);
+  --popout-shading: rgba(0, 0, 0, 0.7);
+  --modal-shading: rgba(0, 0, 0, 0.5);
+  --input-shading: rgba(255, 255, 255, 0.05);
+  --normal-text: #fbfbfb;
+  --muted-text: #94949c;
+}
+
+/* ONYX THEME */
+:is(.theme-midnight, .theme-light .theme-midnight) {
+  --background-shading: rgba(0, 0, 0, 0.8);
+  --card-shading: rgba(0, 0, 0, 0.4);
+  --popout-shading: rgba(0, 0, 0, 0.8);
+  --modal-shading: rgba(0, 0, 0, 0.6);
+  --input-shading: rgba(255, 255, 255, 0.05);
+  --normal-text: #dcdcde;
+  --muted-text: #86868e;
+}
+
+/* ADD ADDITIONAL CSS BELOW HERE */
+
+/* remove banner fade */
+.theme-dark .container__590e2 .bannerImage__39c51, /*server banner*/
+.profileBanner__8414b, /*user modal*/
+.popoutBannerPremium__942db, /*nitro popout*/
+.popoutBanner__9f5b9 { /*user popout*/
+    -webkit-mask: none;
+    mask: none;
+}
+.root_f9a4c9 .userProfileOuterUnthemed_c69a7b .banner_d5fdb1 {
+  -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
+  mask: linear-gradient(to bottom, transparent 50%, transparent);
+}
+
+/* show full bio */
+ .descriptionClamp_abaf7d {
+    -webkit-line-clamp: unset;
+}
+.maxBioHeight_abaf7d {
+    max-height: unset;
+}
+
+/* remove server discovery */
+.footer_f8ec41 {
+  display: none;
+}
